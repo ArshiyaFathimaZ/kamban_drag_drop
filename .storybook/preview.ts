@@ -1,5 +1,17 @@
+import type { Preview } from "@storybook/react";
 import '../src/styles/globals.css';
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  a11y: { element: '#root' }
+
+const preview: Preview = {
+  parameters: {
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
+    },
+    layout: "centered",
+  },
 };
+
+export default preview;

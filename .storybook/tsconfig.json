@@ -1,0 +1,10 @@
+// {
+//   "extends": "../tsconfig.json",
+//   "compilerOptions": {
+//     "types": ["storybook__react", "vite/client"]
+//   },
+//   "include": [
+//     "../src/**/*",
+//     "./*"
+//   ]
+// }
